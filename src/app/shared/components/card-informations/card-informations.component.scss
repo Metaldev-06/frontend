@@ -1,0 +1,27 @@
+@import "../../../../variables.scss";
+
+.badge__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .card__container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: $white-color;
+    color: $black-color;
+    border-radius: $border-radius-x1;
+    font-weight: $font-weight-semibold;
+
+    span {
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

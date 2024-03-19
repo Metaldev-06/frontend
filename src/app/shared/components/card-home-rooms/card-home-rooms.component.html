@@ -1,0 +1,16 @@
+<div class="cards__container">
+  @for (room of rooms(); track $index) {
+    <div class="card">
+      <div class="info__container">
+        <span class="title"> {{ room.title | titlecase }} </span>
+        <span class="type"> {{ room.type }} </span>
+        <span class="number"> {{ room.number }} </span>
+        <span class="price"> {{ room.price }} </span>
+      </div>
+
+      <div class="icon__container">
+        <span nz-icon [nzType]="'home'"></span>
+      </div>
+    </div>
+  }
+</div>

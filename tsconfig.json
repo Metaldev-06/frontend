@@ -21,15 +21,15 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "paths": {
-      "@assets/*": ["/src/assets/*"],
-      "@directives/*": ["/src/app/shared/directives/*"],
-      "@guards/*": ["/src/app/core/guards/*"],
-      "@interceptors/*": ["/src/app/core/interceptors/*"],
-      "@interfaces/*": ["/src/app/core/interfaces/*"],
-      "@pipes/*": ["/src/app/shared/pipes/*"],
-      "@services/*": ["/src/app/core/services/*"],
-      "@shared-components/*": ["/src/app/shared/components/*"],
-      "@dashboard/*": ["/src/app/dashboard/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@directives/*": ["./src/app/shared/directives/*"],
+      "@guards/*": ["./src/app/core/guards/*"],
+      "@interceptors/*": ["./src/app/core/interceptors/*"],
+      "@interfaces/*": ["./src/app/core/interfaces/*"],
+      "@pipes/*": ["./src/app/shared/pipes/*"],
+      "@services/*": ["./src/app/core/services/*"],
+      "@shared-components/*": ["./src/app/shared/components/*"],
+      "@dashboard/*": ["./src/app/dashboard/*"]
     }
   },
   "angularCompilerOptions": {

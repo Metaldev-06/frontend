@@ -1,0 +1,8 @@
+<div class="badge__container">
+  @for (option of options(); track $index) {
+    <div class="card__container" [style]="{ color: option.color }">
+      <span>{{ option.name | titlecase }}</span>
+      <span> {{ option.numberOption }} </span>
+    </div>
+  }
+</div>
