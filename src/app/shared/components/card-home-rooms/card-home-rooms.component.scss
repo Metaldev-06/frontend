@@ -30,7 +30,7 @@
       }
 
       .title {
-        font-size: $font-size-x3;
+        font-size: $font-size-x5;
       }
 
       .number {
@@ -39,6 +39,13 @@
       }
     }
 
-    .icon__container {}
+    .icon__container {
+      align-self: flex-end;
+
+      span {
+        font-size: $font-size-x8;
+
+      }
+    }
   }
 }
