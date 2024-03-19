@@ -1,0 +1,32 @@
+@import "../../../../variables.scss";
+
+
+
+.user__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  user-select: none;
+
+  img {
+    border-radius: $border-radius-x2;
+    object-fit: cover;
+  }
+
+  .user__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .username {
+      // height: 30px;
+      font-weight: $font-weight-semibold;
+    }
+
+    .admin {
+      font-size: $font-size-x1;
+      color: $secondary-color
+    }
+  }
+}

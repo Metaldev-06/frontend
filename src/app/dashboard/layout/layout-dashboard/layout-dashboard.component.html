@@ -1,0 +1,64 @@
+<nz-layout>
+  <nz-sider
+    class="sidemenu__container"
+    nzCollapsible
+    nzWidth="200px"
+    nzTheme="dark"
+    [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null"
+  >
+    <div class="logo">
+      <img src="/assets/img/logo.png" alt="Logo By Dizeid" width="50" />
+    </div>
+
+    <ul class="menu__container" nz-menu nzTheme="dark" nzMode="inline">
+      @for (item of itemsMenu(); track $index) {
+        <li
+          nz-menu-item
+          [ngClass]="{ isCollapsed: isCollapsed, isNotCollapsed: !isCollapsed }"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [routerLinkActive]="'activeLink'"
+          [routerLink]="[item.link]"
+        >
+          <span nz-icon [nzType]="item.icon"></span>
+          <span> {{ item.title | titlecase }}</span>
+        </li>
+      }
+
+      <li
+        nz-menu-item
+        [ngClass]="{ isCollapsed: isCollapsed, isNotCollapsed: !isCollapsed }"
+      >
+        <span nz-icon nzType="logout"></span>
+        <span>Cerrar Sesión</span>
+      </li>
+    </ul>
+
+    <div class="trigger__container">
+      <span
+        class="trigger"
+        nz-icon
+        [nzType]="isCollapsed ? 'right' : 'left'"
+        (click)="collapese()"
+      ></span>
+    </div>
+  </nz-sider>
+
+  <nz-layout>
+    <nz-header>
+      <div class="header__container">
+        <app-title-dashboard />
+
+        <app-user-actions />
+      </div>
+    </nz-header>
+
+    <nz-content>
+      <div class="inner-content">
+        <ng-content></ng-content>
+      </div>
+    </nz-content>
+
+    <nz-footer>Design ByDizeid ©2024</nz-footer>
+  </nz-layout>
+</nz-layout>

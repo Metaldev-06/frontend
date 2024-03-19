@@ -1,0 +1,32 @@
+@import "_mediaqueries.scss";
+
+//!Colors
+$black-color: #000000;
+$black-color-2: #0F0F13;
+$black-color-3: #292929;
+$white-color: #FFFFFF;
+$complementary-color: #5D5FEF;
+$secondary-color: #737791;
+
+//!Border Radius
+$border-radius-x1: 4px;
+$border-radius-x2: 8px;
+$border-radius-x3: 16px;
+$border-radius-max: 50%;
+
+//!Fonts size
+$font-size-x1: 12px;
+$font-size-x2: 14px;
+$font-size-x3: 16px;
+$font-size-x4: 18px;
+$font-size-x5: 20px;
+$font-size-x6: 24px;
+$font-size-x7: 32px;
+$font-size-x8: 48px;
+$font-size-x9: 64px;
+
+//!Fonts Weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 700;

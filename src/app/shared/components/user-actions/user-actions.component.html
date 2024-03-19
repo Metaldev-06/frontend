@@ -1,0 +1,15 @@
+<div class="user__container" (click)="collapese()">
+  <img
+    src="https://res.cloudinary.com/du04fnqqz/image/upload/v1699566003/Photo_Room_20230414_152536_e8c63efd0f_7e5578d670.png"
+    alt="Imágen de Perfil"
+    width="50"
+    height="50"
+  />
+
+  <div class="user__info">
+    <span class="username">Beer Monkeys</span>
+    <span class="admin">Administrador</span>
+  </div>
+
+  <span nz-icon [nzType]="isCollapsed ? 'down' : 'up'"></span>
+</div>
