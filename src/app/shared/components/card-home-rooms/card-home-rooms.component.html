@@ -5,7 +5,9 @@
         <span class="title"> {{ room.title | titlecase }} </span>
         <span class="type"> {{ room.type | titlecase }} </span>
         <span class="number"> {{ room.number }} </span>
-        <span class="price"> {{ room.price | currency }} </span>
+        <span class="price">
+          {{ room.price | currency: "" : "symbol-narrow" : "4.0" }}
+        </span>
       </div>
 
       <div class="icon__container">

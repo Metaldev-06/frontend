@@ -1,0 +1,38 @@
+@import "../../../../variables.scss";
+
+.clock__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: $white-color;
+  padding: 1rem;
+  border-radius: $border-radius-x2;
+  box-shadow: $box-shadow;
+  height: 180px;
+
+
+  .date__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    h3 {
+      color: $black-color;
+      font-size: $font-size-x5;
+      font-weight: $font-weight-bold;
+    }
+
+    .time {
+      font-size: $font-size-x6;
+      color: $complementary-color;
+      font-weight: $font-weight-bold;
+    }
+
+    .date {
+      color: $secondary-color;
+    }
+  }
+
+}

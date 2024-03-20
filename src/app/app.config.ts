@@ -1,4 +1,8 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import {
+  ApplicationConfig,
+  LOCALE_ID,
+  importProvidersFrom,
+} from '@angular/core';
 import {
   provideRouter,
   withComponentInputBinding,
@@ -12,14 +16,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { routes } from './app.routes';
 
-import { es_ES, provideNzI18n } from 'ng-zorro-antd/i18n';
+import localeEsAR from '@angular/common/locales/es-AR';
 
-registerLocaleData(es);
+registerLocaleData(localeEsAR);
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes, withViewTransitions(), withComponentInputBinding()),
-    provideNzI18n(es_ES),
     importProvidersFrom(FormsModule, HttpClientModule),
     provideAnimations(),
+    {
+      provide: LOCALE_ID,
+      useValue: 'es-AR',
+    },
   ],
 };

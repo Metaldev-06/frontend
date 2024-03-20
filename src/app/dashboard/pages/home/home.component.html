@@ -4,6 +4,20 @@
   </article>
 
   <article class="cards__container">
-    <app-card-home-rooms [rooms]="rooms" />
+    <div class="rooms__conteiner">
+      <app-card-home-rooms [rooms]="rooms" />
+    </div>
+
+    <div class="information__container">
+      <app-clock />
+      <div class="money__container">
+        <div class="money">
+          <h3>Ingresos</h3>
+          <span>{{ "150000" | currency: "" : "symbol-narrow" : "4.1" }}</span>
+        </div>
+
+        <img src="/assets/img/money.svg" alt="money" width="100" />
+      </div>
+    </div>
   </article>
 </section>

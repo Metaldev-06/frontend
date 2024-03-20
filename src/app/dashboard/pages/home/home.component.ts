@@ -1,14 +1,21 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CardInformationsComponent } from '@shared-components/card-informations/card-informations.component';
 
 import { badge } from '@interfaces/badge-home.interfaces';
 import { CardHomeRoomsComponent } from '@shared-components/card-home-rooms/card-home-rooms.component';
 import { roomInformation } from '@interfaces/card-home.interface';
+import { ClockComponent } from '@shared-components/clock/clock.component';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CardInformationsComponent, CardHomeRoomsComponent],
+  imports: [
+    CardInformationsComponent,
+    CardHomeRoomsComponent,
+    ClockComponent,
+    CurrencyPipe,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -41,18 +48,18 @@ export class HomeComponent {
       type: 'single',
     },
     {
-      title: 'ocupado',
-      number: 3,
-      partner: false,
-      price: 20000,
-      type: 'triple',
-    },
-    {
       title: 'libre',
       number: 2,
       partner: false,
       price: 10000,
       type: 'matrimonial',
+    },
+    {
+      title: 'ocupado',
+      number: 3,
+      partner: false,
+      price: 20000,
+      type: 'triple',
     },
     {
       title: 'limpieza',
