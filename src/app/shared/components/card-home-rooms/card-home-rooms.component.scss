@@ -18,6 +18,8 @@
     color: $black-color;
     border-radius: $border-radius-x1;
     flex-grow: 1;
+    box-shadow: $box-shadow;
+
 
     .info__container {
       display: flex;
@@ -25,7 +27,8 @@
       gap: 1rem;
 
       .title,
-      .number {
+      .number,
+      .price {
         font-weight: $font-weight-bold;
       }
 
@@ -34,15 +37,18 @@
       }
 
       .number {
-        font-size: $font-size-x6;
+        font-size: $font-size-x7;
+      }
 
+      .price {
+        color: $green-color;
       }
     }
 
     .icon__container {
       align-self: flex-end;
 
-      span {
+      i {
         font-size: $font-size-x8;
 
       }

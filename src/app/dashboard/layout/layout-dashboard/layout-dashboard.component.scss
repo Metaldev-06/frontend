@@ -56,9 +56,10 @@ nz-layout {
 
 
   nz-header {
-    background-color: $black-color-2;
+    background-color: $white-color;
     padding: 0;
     line-height: 20px;
+    box-shadow: $box-shadow;
 
     .header__container {
       width: 100%;
@@ -67,8 +68,7 @@ nz-layout {
       justify-content: space-between;
       padding-inline: 1rem;
       align-items: center;
-
-
+      color: $black-color;
     }
   }
 
@@ -89,12 +89,13 @@ nz-layout {
 
   .inner-content {
     padding: 24px;
-    background-color: $black-color;
+    background-color: $white-color-2;
     height: 100%;
   }
 
   nz-footer {
     height: 48px;
+    // background-color: $white-color;
     background-color: $black-color-2;
     color: $secondary-color;
     display: flex;
