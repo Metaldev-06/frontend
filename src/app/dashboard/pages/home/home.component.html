@@ -1,4 +1,4 @@
-<section class="home__section">
+<!-- <section class="home__section">
   <article class="badge__container">
     <app-card-informations [options]="options" />
   </article>
@@ -20,4 +20,28 @@
       </div>
     </div>
   </article>
-</section>
+</section> -->
+
+<div class="container">
+  <div class="cards">
+    <app-card-informations [options]="options" />
+  </div>
+
+  <div class="cards-rooms">
+    <app-card-home-rooms [rooms]="rooms" />
+  </div>
+
+  <div class="informations">
+    <div class="information__container">
+      <app-clock />
+      <div class="money__container">
+        <div class="money">
+          <h3>Ingresos</h3>
+          <span>{{ "150000" | currency: "" : "symbol-narrow" : "4.1" }}</span>
+        </div>
+
+        <img src="/assets/img/money.svg" alt="money" width="100" />
+      </div>
+    </div>
+  </div>
+</div>

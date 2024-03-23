@@ -74,10 +74,17 @@ nz-layout {
 
   .logo {
     height: 32px;
-    margin: 16px;
+    // margin: 16px;
+    margin-bottom: 1rem;
     text-align: center;
     font-size: $font-size-x6;
     font-weight: $font-weight-bold;
+
+    img {
+      width: 100%;
+      max-width: 100px;
+      object-fit: cover;
+    }
   }
 
 
